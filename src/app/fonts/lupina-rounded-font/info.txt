@@ -1,0 +1,2 @@
+﻿license: Demo
+link: https://www.fontspace.com/lupina-rounded-font-f112899

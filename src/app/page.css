@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--white2);
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 30px;
+    width: 35px;
+    margin-right: 10px;
+}
+
+.main-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.background-main-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+  
+.main-page-content {
+    position: relative;
+    z-index: 1;
+    color: var(--white2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.main-page-content h1 {
+    font-family: Homey;
+    font-size: 56px;
+}
+
+.main-page-content h3 {
+    font-family: 'Lupina Rounded';
+    letter-spacing: 1px;
+}
+
+.main-page-content .welcome-txt {
+    font-family: 'Simpleness Regular';
+    margin-top: 50px;
+    font-size: 75px;
+}
+
+.main-page-content p {
+    font-family: 'Lupina Rounded';
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 75%;
+    margin-top: 45px;
+    margin-bottom: 55px;
+}
+
+.btn-containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    gap: 23em;
+}
+
+.btn-containers button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    width: 135px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.main-btn-text {
+    font-family: 'Lupina Rounded';
+    letter-spacing: 1px;
+    margin-right: 10px;
+}
+
+.login-main {
+    background-color: var(--green);
+    color: var(--white2);
+} 
+
+.login-main:hover {
+    background-color: var(--greenhover);
+}
+
+.signup-main {
+    background-color: var(--lightgray);
+    color: var(--black);
+}
+
+.signup-main:hover {
+    background-color: var(--gray);
+}

@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: var(--white2);
+    height: 100vh;
+    margin: 0;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-family: 'Lupina Rounded';
+    letter-spacing: 1px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+img {
+    height: 30px;
+    width: 35px;
+}
+
+label {
+    font-family: 'Lupina Rounded';
+    letter-spacing: 1px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input {
+    padding: 5px;
+    width: 300px;
+    font-family: 'Lupina Rounded';
+}
+
+.login-page {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.login-content {
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70px;
+    padding: 30px 55px;
+    border-radius: 30px;
+
+    border: 1px solid white;
+}
+
+.login-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.login-content h1 {
+    font-family: 'Simpleness Regular';
+    margin-bottom: 30px;
+}
+
+.login-content p {
+    font-family: 'Lupina Rounded';
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.login-content a {
+    text-decoration: underline;
+}
+
+.login-content a:hover {
+    cursor: pointer;
+    color: var(--lightgray);
+}
+
+.login-btn {
+    width: 100px;
+    background-color: var(--green);
+    color: var(--white2);
+}
+
+.login-btn:hover {
+    background-color: var(--greenhover);
+}
+
+.login-btn h3 {
+    margin-right: 7px;;
+}

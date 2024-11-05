@@ -1,95 +1,44 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import React from 'react';
+import './page.css';
+import Link from 'next/link';
+import Image from 'next/image';
+import { rocketLogo, signupLogo } from '../../public/images/images.js';
+import { BackgroundVideo } from './components/components.js';
 
-export default function Home() {
+export default function Page() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="main-page">
+      <div className="background-main-page">
+        <BackgroundVideo></BackgroundVideo>
+      </div>
+      <div className="main-page-content">
+        <h1>Yes A Fan Of These Games</h1>
+        <h3>by neglectPanda</h3>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+        <h2 className='welcome-txt'>WELCOME</h2>
+        <p>This is neglectPanda. Don't question my alias. This is my first 
+          big project involving full stack development. Since I love vintage 
+          games, I got inspired to make this site. If you are a fellow programmer
+          like me, feel free to go to the <code><Link href="{somewhere}"> Docs Page </Link></code> 
+          and you know, learn, I guess. Everything will be handled in the docs page. For
+          just players, enjoy and dominate the system *<i>evil laugh</i>*.
+        </p>
+
+        <div className="btn-containers">
+          <Link href="/Login">
+            <button type="button" className='login-main'>
+              <Image alt='Rocket' src={rocketLogo}></Image>
+              <h2 className='main-btn-text'>Login</h2>
+            </button>
+          </Link>
+          <Link href="somewhere">
+            <button type="button" className='signup-main'>
+              <Image alt='Signup' src={signupLogo}></Image>
+              <h2 className='main-btn-text'>Signup</h2>
+            </button>
+          </Link>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
     </div>
   );
 }
