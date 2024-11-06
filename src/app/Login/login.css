@@ -48,15 +48,7 @@ form input {
     font-family: 'Lupina Rounded';
 }
 
-.login-page {
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.login-background {
+.background {
     position: absolute;
     top: 0;
     left: 0;
@@ -74,11 +66,14 @@ form input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -70px;
     padding: 30px 55px;
     border-radius: 30px;
+    border: none;
+    outline: none;
 
-    border: 1px solid white;
+    /* Add a transparent background and blur effect */
+    background-color: var(--blurblack); /* Adjust opacity as needed */
+    backdrop-filter: blur(15px); /* Adjust blur strength as needed */
 }
 
 .login-btn-container {

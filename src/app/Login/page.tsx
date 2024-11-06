@@ -5,10 +5,12 @@ import './login.css';
 import Link from 'next/link';
 import { BackgroundVideo } from '../components/components.js';
 
+//ADD ERROR MESSAGES IF ACC DOES NOT EXIST
+
 const LoginPage = () => {
   return (
     <div className='login-page'>
-        <div className="login-background">
+        <div className="background">
           <BackgroundVideo></BackgroundVideo>
         </div>
         

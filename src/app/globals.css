@@ -24,6 +24,7 @@
   --white2: #ffffff;
   --green: #0f7206;
   --greenhover: #0a4f03;
+  --blurblack: rgba(255, 255, 255, 0.1);
 }
 
 /* @media (prefers-color-scheme: dark) {
